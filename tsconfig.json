@@ -3,7 +3,9 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "types": ["unplugin-icons/types/preact"]
+    "jsxImportSource": "react",
+    "types": [
+      "unplugin-icons/types/preact"
+    ]
   }
 }

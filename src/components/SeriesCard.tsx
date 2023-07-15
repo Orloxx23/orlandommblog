@@ -20,7 +20,7 @@ export default function ({ series, posts, order }: Props) {
     <div class="bg-slate-300 dark:bg-slate-800 rounded-lg">
       <button
         class={`p-5 rounded-lg text-left space-y-2 hover:bg-slate-400 dark:hover:bg-slate-700 ${
-          isOpen ? "border-b-4 border-blue-600 rounded-b-lg bg-slate-400 dark:bg-slate-700" : ""
+          isOpen ? "border-b-4 border-purple-600 rounded-b-lg bg-slate-400 dark:bg-slate-700" : ""
         }`}
         onClick={handleOnClick}
       >
@@ -48,7 +48,7 @@ export default function ({ series, posts, order }: Props) {
               class={`relative pl-5 before:absolute before:left-0 before:top-3 before:h-1.5 before:w-1.5 before:rounded-full ${
                 !post.data.planned && order
                   ? order == index + 1
-                    ? "before:bg-blue-600 before:ring-[3px] before:ring-blue-600/40"
+                    ? "before:bg-purple-600 before:ring-[3px] before:ring-purple-600/40"
                     : "before:bg-black dark:before:bg-white"
                   : !post.data.planned
                   ? "before:bg-black dark:before:bg-white"
@@ -59,7 +59,7 @@ export default function ({ series, posts, order }: Props) {
                 href={!post.data.planned ? `/blog/${post.slug}` : undefined}
                 class={`space-x-2 font-medium ${
                   !post.data.planned
-                    ? "underline underline-offset-2 text-black dark:text-white decoration-blue-600"
+                    ? "underline underline-offset-2 text-black dark:text-white decoration-purple-600"
                     : "text-white0"
                 }`}
               >

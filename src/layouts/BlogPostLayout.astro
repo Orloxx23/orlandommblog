@@ -40,20 +40,20 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
 
 <BaseLayout title={title} description={description} postMeta={{ pubDate, tags }}>
   <div
-    class="prose prose-slate max-w-none prose-headings:scroll-my-20 prose-a:underline-offset-2 prose-a:decoration-blue-600 prose-img:rounded-lg dark:prose-invert"
+    class="prose prose-slate max-w-none prose-headings:scroll-my-20 prose-a:underline-offset-2 prose-a:decoration-purple-600 prose-img:rounded-lg dark:prose-invert"
   >
     <h1>{title}</h1>
     <div class="font-semibold text-xs uppercase space-y-2">
       <div class="flex flex-wrap items-center space-x-1">
         <span>
-          Published on <FormattedDate date={pubDate} />
+          Publicado el <FormattedDate date={pubDate} />
         </span>
         {
           updatedDate && (
             <>
               <span>{"•"}</span>
               <span>
-                Updated on <FormattedDate date={updatedDate} />
+                Actualizado el <FormattedDate date={updatedDate} />
               </span>
             </>
           )
@@ -89,7 +89,7 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
       {
         headings.length > 0 && (
           <nav class="hidden text-sm space-y-2 mt-9 lg:block lg:w-4/12 h-screen sticky top-20 z-40">
-            <span class="font-black dark:text-white text-black uppercase">On This Page</span>
+            <span class="font-black dark:text-white text-black uppercase">En esta página</span>
             <TableOfContent headings={headings} />
             <div class="border-slate-700 border-b-[1px]" />
             <div class="flex float-right">
@@ -116,12 +116,12 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
 
     // Header title
     const titleSpan = document.createElement("span");
-    titleSpan.className = "text-blue-400";
+    titleSpan.className = "text-purple-400";
 
     // Header div
     const headerDiv = document.createElement("div");
     headerDiv.className =
-      "flex w-full bg-slate-950 border-b-[0.5px] border-blue-400 rounded-t-lg mt-10 text-base items-center justify-between py-2 px-4";
+      "flex w-full bg-slate-950 border-b-[0.5px] border-purple-400 rounded-t-lg mt-10 text-base items-center justify-between py-2 px-4";
 
     // Current title
     const titleDiv = codeBlock.querySelector("div[data-rehype-pretty-code-title]");

@@ -1,4 +1,5 @@
 ---
+import MdiWeb from "~icons/mdi/web";
 import MdiTwitter from "~icons/mdi/twitter";
 import MdiGithub from "~icons/mdi/github";
 import MdiRss from "~icons/mdi/rss";
@@ -24,26 +25,32 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
   <div class="space-y-10">
     <div class="space-y-4">
       <h1 class="text-4xl text-black dark:text-white font-black">
-        Hello there! <span
+        Hola! 👋 <span
           class="underline underline-offset-2 decoration-fuchsia-600 dark:decoration-fuchsia-400"
-          >I'm Abdullah</span
+          >Soy Orlando</span
         >
       </h1>
       <p>
-        Welcome to my blog! I'm a software engineer with experience in <span class="font-black"
-          >OCaml</span
-        >, <span class="font-black">JavaScript/Typescript</span>, <span class="font-black"
-          >Python</span
-        >, <span class="font-black">ReactJS</span>, and <span class="font-black">Node.js</span>. As
-        an enthusiastic learner, I aim to share my journey of exploration with you. Join me as I
-        write about various aspects of computer science, ranging from <span class="font-black"
-          >Programming Languages</span
-        >, <span class="font-black">AI</span>, <span class="font-black">Web Development</span>, to
-        <span class="font-black">Theoretical CS</span>.
+        Bienvenido a mi mundo como desarrollador frontend, donde me especializo en <span class="font-black">React</span> y destaco
+        en <span class="font-black">CSS</span>, <span class="font-black">HTML</span> y <span
+          class="font-black">JavaScript</span
+        >. Tengo pasión por aprender y me encanta experimentar con nuevas tecnologías. Con un ojo
+        meticuloso para los detalles, pongo todo mi corazón y alma en cada proyecto que emprendo.
+        Únete a mí en este viaje mientras comparto mis conocimientos, descubrimientos y experiencias
+        en el mundo siempre cambiante del desarrollo frontend. Juntos, sumerjámonos en el
+        emocionante reino de React y descubramos las infinitas posibilidades que ofrece.
       </p>
-      <div class="space-x-1">
+      <div class="space-x-1 space-y-1">
         <a
-          href="https://twitter.com/algorizr"
+          href="https://orlandomm.me"
+          target="_blank"
+          class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
+        >
+          <MdiWeb />
+          <span>Web</span>
+        </a>
+        <a
+          href="https://twitter.com/orloxx23"
           target="_blank"
           class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
         >
@@ -51,7 +58,7 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
           <span>Twitter</span>
         </a>
         <a
-          href="https://github.com/algorizr"
+          href="https://github.com/orloxx23"
           target="_blank"
           class="inline-flex items-center justify-center space-x-2 py-2 px-3 rounded-md bg-slate-300 hover:bg-slate-400 dark:bg-slate-800 dark:hover:bg-slate-700"
         >
@@ -71,18 +78,18 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
     {
       featuredPosts.length > 0 && (
         <div class="space-y-5">
-          <h1 class="text-3xl text-black dark:text-white">Featured Posts</h1>
+          <h1 class="text-3xl text-black dark:text-white">Publicaciones destacadas</h1>
           <PostsList posts={featuredPosts} />
         </div>
       )
     }
     <div class="space-y-5">
       <div class="flex items-center justify-between space-x-2">
-        <h1 class="text-3xl text-black dark:text-white">Latest Posts</h1>
+        <h1 class="text-3xl text-black dark:text-white">Últimas publicaciones</h1>
         <a
           href="/blog"
-          class="inline-flex items-center justify-center py-0.5 px-3 bg-blue-600 hover:bg-blue-800 rounded-full text-sm text-white"
-          >View all</a
+          class="inline-flex items-center justify-center py-0.5 px-3 bg-purple-600 hover:bg-purple-800 rounded-full text-sm text-white"
+          >Ver todas</a
         >
       </div>
       <PostsList posts={sortedPosts} />
@@ -91,12 +98,12 @@ const featuredSeries = (await getCollection("series")).filter((s) => s.data.feat
       featuredSeries.length > 0 && (
         <div class="space-y-5">
           <div class="flex items-center justify-between space-x-2">
-            <h1 class="text-3xl text-black dark:text-white">Featured Series</h1>
+            <h1 class="text-3xl text-black dark:text-white">Series destacadas</h1>
             <a
               href="/series"
-              class="inline-flex items-center justify-center py-0.5 px-3 bg-blue-600 hover:bg-blue-800 rounded-full text-sm text-white"
+              class="inline-flex items-center justify-center py-0.5 px-3 bg-purple-600 hover:bg-purple-800 rounded-full text-sm text-white"
             >
-              View all
+              Ver todas
             </a>
           </div>
           <SeriesList series={featuredSeries} />

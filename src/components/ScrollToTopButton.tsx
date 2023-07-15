@@ -9,7 +9,7 @@ export default function ScrollToTopButton() {
       onClick={handleOnClick}
       className="no-underline text-xs font-bold uppercase hover:text-slate-400 dark:hover:text-white"
     >
-      Back to top
+      Volver arriba
     </button>
   );
 }
