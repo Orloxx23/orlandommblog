@@ -11,7 +11,7 @@ export async function get(context) {
     stylesheet: "/rss/styles.xsl",
     items: posts.map((post) => ({
       ...post.data,
-      link: `/posts/${post.slug}/`,
+      link: `/blog/${post.slug}/`,
     })),
   });
 }
