@@ -1,3 +1,3 @@
 export const SITE_NAME = "OrlandommBlog";
 export const SITE_TITLE = "Orlando Mina | Blog";
-export const SITE_DESCRIPTION = "Bienvenido a mi mundo como desarrollador frontend, donde me especializo en React y destacoen CSS, HTML y JavaScript. Tengo pasión por aprender y me encanta experimentar con nuevas tecnologías. Con un ojo meticuloso para los detalles, pongo todo mi corazón y alma en cada proyecto que emprendo. Únete a mí en este viaje mientras comparto mis conocimientos, descubrimientos y experiencias en el mundo siempre cambiante del desarrollo frontend. Juntos, sumerjámonos en el emocionante reino de React y descubramos las infinitas posibilidades que ofrece.";
+export const SITE_DESCRIPTION = "Desarrollador frontend apasionado por React. Aprendiendo constantemente, comparto conocimientos y experiencias en este emocionante campo del desarrollo web.";
