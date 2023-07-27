@@ -26,34 +26,38 @@ Esta potenciada por RapidAPI, por lo que para poder usarla hay que registrarse e
 
 Hay que tener en cuenta que la API está en fase beta, por lo que puede haber cambios en el futuro.
 
+### ¿Cómo es por dentro?
+
+La API está hecha con **Node.js** y **Express**. Hace Scraping con <a href="https://cheerio.js.org" target="_blank">**CheerioJS**</a> a la página de <a href="https://vlr.gg" target="_blank">vlr.gg</a> para obtener los datos.
+
 ## ¿Qué datos ofrece?
 
 La API ofrece los siguientes datos:
 
-| Equipos | |
-| :----- | -: |
-| Obtener todos los equipos por región | 🛠 |
-| Obtener un equipo por ID | ✔️ |
+| Equipos                              |     |
+| :----------------------------------- | --: |
+| Obtener todos los equipos por región |  🛠 |
+| Obtener un equipo por ID             | ✔️ |
 
-| Jugadores | |
-| :------- | -: |
+| Jugadores                   |     |
+| :-------------------------- | --: |
 | Obtener todos los jugadores | ✔️ |
-| Obtener un jugador por ID | ✔️ |
+| Obtener un jugador por ID   | ✔️ |
 
-| Eventos | |
-| :----- | -: |
-| Obtener todos los eventos | 🛠 |
-| Obtener un evento por ID | 🛠 |
+| Eventos                   |     |
+| :------------------------ | --: |
+| Obtener todos los eventos |  🛠 |
+| Obtener un evento por ID  |  🛠 |
 
-| Partidos | |
-| :------ | -: |
-| Obtener todos los partidos | 🛠 |
-| Obtener un partido por ID | 🛠 |
+| Partidos                   |     |
+| :------------------------- | --: |
+| Obtener todos los partidos |  🛠 |
+| Obtener un partido por ID  |  🛠 |
 
-| Resultados| |
-| :-------- | -: |
-| Obtener todos los resultados | 🛠 |
-| Obtener un resultado por ID | 🛠 |
+| Resultados                   |     |
+| :--------------------------- | --: |
+| Obtener todos los resultados |  🛠 |
+| Obtener un resultado por ID  |  🛠 |
 
 Algunos datos están en desarrollo, por lo que no están disponibles todavía.
 
@@ -62,10 +66,6 @@ Algunos datos están en desarrollo, por lo que no están disponibles todavía.
 Mira como usarla en la <a href="https://vlrggapi-docs.vercel.app" target="_blank">documentación de la API</a>. Alli podras ver como hacer las peticiones, los datos que devuelve y hacer tu propias pruebas.
 
 ![API Playground](~/assets/posts/vlr/playground.webp)
-
-## ¿Cómo funciona por detrás?
-
-La API está hecha con **Node.js** y **Express**. Hace Scraping con <a href="https://cheerio.js.org" target="_blank">**CheerioJS**</a> a la página de <a href="https://vlr.gg" target="_blank">vlr.gg</a> para obtener los datos.
 
 ## Ejemplos
 
@@ -141,15 +141,18 @@ try {
     "results": [
       // Partidos del equipo
       {
-        "match": { // Información del partido
+        "match": {
+          // Información del partido
           "id": "string",
           "url": "string"
         },
-        "event": { // Información del evento
+        "event": {
+          // Información del evento
           "name": "string",
           "logo": "string"
         },
-        "teams": [ // Equipos que han jugado el partido
+        "teams": [
+          // Equipos que han jugado el partido
           {
             "name": "string",
             "tag": "string",
@@ -162,7 +165,7 @@ try {
     "upcoming": [
       // Próximos partidos del equipo
       {
-        "match": { 
+        "match": {
           "id": "string",
           "url": "string"
         },
