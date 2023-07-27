@@ -7,6 +7,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import { Image } from "astro:assets";
 import SeriesList from "../components/SeriesList.astro";
 import SeriesCard from "../components/SeriesCard.astro";
+import Share from "../components/Share.astro";
 
 type Blog = CollectionEntry<"blog">["data"];
 
@@ -94,6 +95,9 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
             <div class="border-slate-700 border-b-[1px]" />
             <div class="flex float-right">
               <ScrollToTopButton client:idle />
+            </div>
+            <div class="flex float-left">
+              <Share />
             </div>
           </nav>
         )

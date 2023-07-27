@@ -1,0 +1,16 @@
+---
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<div>
+  <a
+    href="https://twitter.com/intent/tweet?bref_src=twsrc%5Etfw"
+    class="twitter-hashtag-button"
+    data-text="Mira esta publicación de @Orloxx23 😲"
+    data-url={canonicalURL}
+    data-related="Orloxx23"
+    data-lang="es"
+    data-dnt="true"
+    data-show-count="false">Compartir</a
+  ><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
