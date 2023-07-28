@@ -22,8 +22,6 @@ Una API es un conjunto de funciones y procedimientos que cumplen una o muchas fu
 
 Para acceder a los datos, se hace una petición HTTP a la API, y esta devuelve los datos en formato JSON.
 
-Esta potenciada por RapidAPI, por lo que para poder usarla hay que registrarse en su página web y obtener una clave de API. Accede a la página de la API en <a href="https://rapidapi.com/madorlix-F9ZSAPsIt3/api/valorant-esports1" target="_blank">RapidAPI</a>.
-
 Hay que tener en cuenta que la API está en fase beta, por lo que puede haber cambios en el futuro.
 
 ### ¿Cómo es por dentro?
@@ -63,7 +61,7 @@ Algunos datos están en desarrollo, por lo que no están disponibles todavía.
 
 ## ¿Cómo usarla?
 
-Mira como usarla en la <a href="https://vlrggapi-docs.vercel.app" target="_blank">documentación de la API</a>. Alli podras ver como hacer las peticiones, los datos que devuelve y hacer tu propias pruebas.
+Mira como usarla en la <a href="https://vlresports.vercel.app" target="_blank">documentación de la API</a>. Alli podras ver como hacer las peticiones, los datos que devuelve y hacer tu propias pruebas.
 
 ![API Playground](~/assets/posts/vlr/playground.webp)
 
@@ -76,11 +74,7 @@ import axios from "axios";
 
 const options = {
   method: "GET",
-  url: "https://valorant-esports1.p.rapidapi.com/v1/teams/1001",
-  headers: {
-    "X-RapidAPI-Key": "API_KEY",
-    "X-RapidAPI-Host": "valorant-esports1.p.rapidapi.com",
-  },
+  url: "https://alert-puce-neckerchief.cyclic.app/api/v1/teams/1001",
 };
 
 try {
