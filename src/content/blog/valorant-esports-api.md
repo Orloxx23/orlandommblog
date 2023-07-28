@@ -36,7 +36,7 @@ La API ofrece los siguientes datos:
 
 | Equipos                              |     |
 | :----------------------------------- | --: |
-| Obtener todos los equipos por región |  🛠 |
+| Obtener todos los equipos por región | ✔️ |
 | Obtener un equipo por ID             | ✔️ |
 
 | Jugadores                   |     |
