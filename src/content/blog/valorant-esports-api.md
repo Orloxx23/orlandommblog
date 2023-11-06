@@ -34,28 +34,28 @@ La API ofrece los siguientes datos:
 
 | Equipos                              |     |
 | :----------------------------------- | --: |
-| Obtener todos los equipos por región | ✔️ |
-| Obtener un equipo por ID             | ✔️ |
+| Obtener todos los equipos por región |  ✔️ |
+| Obtener un equipo por ID             |  ✔️ |
 
 | Jugadores                   |     |
 | :-------------------------- | --: |
-| Obtener todos los jugadores | ✔️ |
-| Obtener un jugador por ID   | ✔️ |
+| Obtener todos los jugadores |  ✔️ |
+| Obtener un jugador por ID   |  ✔️ |
 
 | Eventos                   |     |
 | :------------------------ | --: |
-| Obtener todos los eventos |  🛠 |
-| Obtener un evento por ID  |  🛠 |
+| Obtener todos los eventos |  ✔️ |
+| Obtener un evento por ID  |   🛠 |
 
 | Partidos                   |     |
 | :------------------------- | --: |
-| Obtener todos los partidos |  🛠 |
-| Obtener un partido por ID  |  🛠 |
+| Obtener todos los partidos |  ✔️ |
+| Obtener un partido por ID  |   🛠 |
 
 | Resultados                   |     |
 | :--------------------------- | --: |
-| Obtener todos los resultados |  🛠 |
-| Obtener un resultado por ID  |  🛠 |
+| Obtener todos los resultados |  ✔️ |
+| Obtener un resultado por ID  |   🛠 |
 
 Algunos datos están en desarrollo, por lo que no están disponibles todavía.
 
